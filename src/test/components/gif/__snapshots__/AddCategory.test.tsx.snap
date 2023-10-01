@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`testing Add category component > should be the same as the snapshot 1`] = `
+<div>
+  <div>
+    <label
+      for="category-search-input"
+    >
+       Search 
+    </label>
+    <input
+      id="category-search-input"
+      name="category-search-input"
+      placeholder="search a gif"
+      type="text"
+      value=""
+    />
+    <button
+      class="btn"
+      type="button"
+    >
+      <span>
+        Add a Gif
+      </span>
+    </button>
+  </div>
+</div>
+`;

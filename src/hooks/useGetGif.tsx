@@ -10,16 +10,8 @@ export const useGetGif = (category: string) => {
   useEffect(() => {
     setIsLoading(true);
     getGifData(category)
-      .then((data) => {
-        const parsedData = data.map((element) => {
-          return {
-            id: element?.id,
-            url: element?.images?.downsized_medium.url,
-            title: element?.title,
-          };
-        });
-        setData(parsedData);
-      })
+      .then((data) => setData(data))
+      .catch((error) => window.alert(error))
       .finally(() => setIsLoading(false));
   }, [category]);
 

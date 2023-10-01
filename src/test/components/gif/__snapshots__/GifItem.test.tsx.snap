@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Testing the GifItem component > Should be the same as the snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="testing gif"
+      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fscholartree.ca%2Fblog%2Fwp-content%2Fuploads%2F2018%2F09%2Fhomer_simpson_rat_testing.gif&f=1&nofb=1&ipt=39d79f305b2235a683a8c5d7a8c32d88e5c2529e12f028d2352dcfb70011038b&ipo=images"
+    />
+    ;
+    <p>
+      testing gif
+    </p>
+  </div>
+</div>
+`;

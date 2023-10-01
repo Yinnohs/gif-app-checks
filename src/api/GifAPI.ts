@@ -7,8 +7,16 @@ export const getGifData = async (gifcategory: string) => {
   try {
     const response = await fetch(gifUrl);
     const { data } = await response.json();
-    return data;
+    const parsedData = data.map((element) => {
+      return {
+        id: element?.id,
+        url: element?.images?.downsized_medium.url,
+        title: element?.title,
+      };
+    });
+
+    return parsedData;
   } catch (error) {
-    window.alert(error);
+    return error;
   }
 };
